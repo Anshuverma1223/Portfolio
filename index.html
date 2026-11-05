@@ -1,0 +1,855 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080812">
+    <meta name="description"
+          content="Explore my portfolio, skills, projects, education, and web development journey.">
+
+    <title>My Portfolio | Creative Developer</title>
+
+    <!-- Link preview -->
+     <meta property="og.image" content="cover.jpg">
+     <meta property="og.title" content="AnshuVerma">
+     <meta property="og.description" content="I'm Anshu verma frontend developer currently learning AI Course with a focus on ML and Deep Learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="background-effects" aria-hidden="true">
+        <div class="glow-orb orb-one"></div>
+        <div class="glow-orb orb-two"></div>
+        <div class="glow-orb orb-three"></div>
+    </div>
+
+    <div class="grid-background" aria-hidden="true"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                Anshu<span class="gradient-text">Verma</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+
+                <li>
+                    <a href="#contact" class="nav-contact">
+                        Let's Talk <span>↗</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        <span>OPEN TO LEARNING & OPPORTUNITIES</span>
+                    </div>
+
+                    <p class="eyebrow">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        Anshu<span class="gradient-text">Verma</span>
+                    </h1>
+
+                    <h2 class="hero-title">
+                        I'm a <span id="typing-text"></span><span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I create modern digital experiences by combining
+                        creative ideas, clean code, and thoughtful design.
+                        I'm passionate about technology and always excited
+                        to learn something new.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="button button-primary">
+                            Explore My Work
+                            <span>↗</span>
+                        </a>
+
+                        <a href="#contact" class="button button-outline">
+                            Let's Connect
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/anshuprogrammer12-design"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <span class="social-divider"></span>
+
+                        <a href="https://www.linkedin.com/in/anshu-verma-581020428?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn ↗
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <h3>02<span>+</span></h3>
+                            <p>Sample Project</p>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <h3>05<span>+</span></h3>
+                            <p>Skills to Explore</p>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <h3>100<span>%</span></h3>
+                            <p>Curiosity</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Visual -->
+
+                <div class="hero-visual reveal">
+
+                    <div class="visual-glow"></div>
+
+                    <div class="orbit orbit-outer"></div>
+                    <div class="orbit orbit-inner"></div>
+
+                    <div class="profile-card">
+
+                        <div class="profile-topbar">
+
+                            <span class="profile-label">CREATIVE MODE</span>
+                        </div>
+
+                        <div class="profile-image">
+                            <img src="/profile1223.jpeg"
+                             alt="Profile Photo">
+                        </div>
+
+                        <div class="profile-info">
+                            <p class="profile-role">ASPIRING DEVELOPER</p>
+                            <h3>Building the future<span>.</span></h3>
+                            <p>One idea at a time.</p>
+                        </div>
+
+                        <div class="code-decoration code-one">
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="code-decoration code-two">
+                            { }
+                        </div>
+
+                    </div>
+
+                    <div class="floating-badge badge-top">
+                        <span class="badge-icon">✦</span>
+                        <div>
+                            <strong>Creative Thinker</strong>
+                            <small>Ideas into reality</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom">
+                        <span class="badge-icon">⌘</span>
+                        <div>
+                            <strong>Web Developer</strong>
+                            <small>Learning by building</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-line"></span>
+                SCROLL TO EXPLORE
+            </a>
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about-section" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">ABOUT ME</span>
+                    <h2>
+                        More Than Code.<br>
+                        <span class="gradient-text">A Creative Mind.</span>
+                    </h2>
+
+                    <p>
+                        A little introduction to who I am, what I enjoy,
+                        and where I want to go.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-main glass-card reveal">
+                        <span class="card-index">WHO I AM</span>
+
+                        <h3>
+                            Turning curiosity into
+                            <span class="gradient-text">creation.</span>
+                        </h3>
+
+                        <p>
+                            I'm a BCA student and frontend developer who builds responsive websites with HTML, CSS, and JavaScript. I also work with Python and C++ for problem solving and data structures.
+                        </p>
+
+                        <p>
+                            I'm aiming for a Software / Full Stack Developer role, with a long-term goal of becoming an AI Engineer. I focus on writing clean code and building projects that are genuinely useful to people.My aiming to become an AI Engineer.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Let's build something together <span>↗</span>
+                        </a>
+                    </div>
+
+
+                    <div class="about-side">
+
+                        <article class="feature-card glass-card reveal">
+                            <div class="feature-icon purple-icon">✦</div>
+                            <h3>Creative Thinking</h3>
+                            <p>
+                                Exploring original ideas and finding
+                                better ways to solve problems.
+                            </p>
+                        </article>
+
+                        <article class="feature-card glass-card reveal">
+                            <div class="feature-icon blue-icon">&lt;/&gt;</div>
+                            <h3>Continuous Learning</h3>
+                            <p>
+                                Improving and growing through projects, practice, and the SigmaX(DSA & AI) Course with a focus on ML and Deep Learning.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">TOOL</span>
+                    <h2>
+                        Skills That Bring<br>
+                        <span class="gradient-text">Ideas to Life.</span>
+                    </h2>
+
+                    <p>
+                        Technologies and abilities I'm learning and developing.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">🌐</span>
+                            <span class="skill-number">01</span>
+                        </div>
+
+                        <h3>HTML5</h3>
+                        <p>Semantic structure and accessible web pages.</p>
+
+                        <div class="skill-track">
+                            <span style="--skill-width: 85%"></span>
+                        </div>
+
+                        <div class="skill-footer">
+                            <span>Web Structure</span>
+                            <span>Learning</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">🎨</span>
+                            <span class="skill-number">02</span>
+                        </div>
+
+                        <h3>CSS3</h3>
+                        <p>Responsive layouts, styling, and animations.</p>
+
+                        <div class="skill-track">
+                            <span style="--skill-width: 75%"></span>
+                        </div>
+
+                        <div class="skill-footer">
+                            <span>Visual Design</span>
+                            <span>Learning</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">⚡</span>
+                            <span class="skill-number">03</span>
+                        </div>
+
+                        <h3>JavaScript</h3>
+                        <p>Interactivity, logic, and dynamic web features.</p>
+
+                        <div class="skill-track">
+                            <span style="--skill-width: 60%"></span>
+                        </div>
+
+                        <div class="skill-footer">
+                            <span>Programming</span>
+                            <span>Learning</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">📊</span>
+                            <span class="skill-number">04</span>
+                        </div>
+
+                        <h3>DSA C++</h3>
+                        <p>DSA in C++ to write efficient, logical solutions..</p>
+
+                        <div class="skill-track">
+                            <span style="--skill-width: 70%"></span>
+                        </div>
+
+                        <div class="skill-footer">
+                            <span>Logical</span>
+                            <span>Problem Sloving</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">🧠</span>
+                            <span class="skill-number">05</span>
+                        </div>
+
+                        <h3>Problem Solving</h3>
+                        <p>Logical thinking and practical experimentation.</p>
+
+                        <div class="skill-track">
+                            <span style="--skill-width: 80%"></span>
+                        </div>
+
+                        <div class="skill-footer">
+                            <span>Core Ability</span>
+                            <span>Developing</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="skills-note">
+                    Note: The skill level will keep improving & updating and becoming more advanced over time.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section projects-section" id="projects">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">WORK</span>
+
+                    <h2>
+                        Projects With<br>
+                        <span class="gradient-text">Purpose & Passion.</span>
+                    </h2>
+
+                    <p>
+                        A collection of projects, experiments, and ideas.
+                    </p>
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <article class="project-card glass-card reveal">
+
+                        <div class="project-preview preview-one">
+                            <div class="mini-browser">
+                                <div class="mini-browser-top">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="mini-browser-body">
+                                    <div class="mini-heading"></div>
+                                    <div class="mini-line"></div>
+                                    <div class="mini-line short"></div>
+
+                                    <div class="mini-button"></div>
+
+                                    <div class="mini-boxes">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="preview-label">01 / WEB DESIGN</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-category">
+                                FRONTEND DEVELOPMENT
+                            </div>
+
+                            <h3>Personal Portfolio</h3>
+
+                            <p>
+                                A responsive portfolio website designed
+                                to showcase personal skills, education,
+                                and projects.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="#home" class="project-link">
+                                Explore project <span>↗</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card glass-card reveal">
+
+                        <div class="project-preview preview-two">
+                            <div class="login-mockup">
+                                <div class="mockup-symbol">✦</div>
+                                <div class="mockup-title"></div>
+                                <div class="mockup-field"></div>
+                                <div class="mockup-field"></div>
+                                <div class="mockup-submit"></div>
+                            </div>
+
+                            <span class="preview-label">02 / Diwali celebrate</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-category">
+                                Diwali
+                            </div>
+
+
+                            <a href="https://diwali-celebrate.vercel.app">click here go to website</a> 
+                            <p>
+                                
+                                A Diwali is a Dipawali, India's biggest festival let every diya shine bright and every heart glow with love.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <a href="#contact" class="project-link">
+                                Explore project <span>↗</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card glass-card reveal">
+
+                        <div class="project-preview preview-three">
+                            <div class="dashboard-mockup">
+
+                                <div class="dashboard-header">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="dashboard-chart">
+                                    <span style="--bar-height: 35%"></span>
+                                    <span style="--bar-height: 65%"></span>
+                                    <span style="--bar-height: 48%"></span>
+                                    <span style="--bar-height: 85%"></span>
+                                    <span style="--bar-height: 58%"></span>
+                                    <span style="--bar-height: 100%"></span>
+                                </div>
+
+                                <div class="dashboard-footer">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                            <span class="preview-label">03 / DATA</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-category">
+                                DATA & PRODUCTIVITY
+                            </div>
+
+                            <h3>Excel Data Dashboard</h3>
+
+                            <p>
+                                A data organization project using
+                                spreadsheet formulas, tables, and
+                                visual summaries.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Excel</span>
+                                <span>Formulas</span>
+                                <span>Analysis</span>
+                            </div>
+
+                            <a href="#contact" class="project-link">
+                                Explore project <span>↗</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="section education-section" id="education">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">MY JOURNEY</span>
+
+                    <h2>
+                        Current <br>
+                        <span class="gradient-text">Current Course</span>
+                    </h2>
+
+                    <p>
+                        My educational background and ongoing development.
+                    </p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-date">CURRENT</span>
+
+                            <h3>Bachelor of Computer Application (BCA)</h3>
+
+                            <p class="timeline-institution">
+                                KK Modi University College, Durg
+                            </p>
+
+                            <p>
+                                Studying Programming, Computer Fundamentals, skill developing AI Engineer.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-date">PREVIOUS</span>
+
+                            <h3>12th , Commerce (2025)</h3>
+
+                            <p class="timeline-institution">
+                                Govt Higher Secondary School Litiya,Durg
+                            </p>
+
+                        </div>
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-date">ONGOING</span>
+
+                            <h3>Self-Learning & Practice</h3>
+
+                            <p class="timeline-institution">
+                                Independent Projects
+                            </p>
+
+                            <p>
+                                Online Learning ,learn DSA at Aapna college. Build My Personal Portfolio website with HTML,CSS and JAVASCRIPT.
+                                Now learning AI Engineer and Machine learning and Deep learning.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="contact-panel glass-card reveal">
+
+                    <div class="contact-content">
+
+                        <span class="section-kicker">
+                            LET'S CONNECT
+                        </span>
+
+                        <h2>
+                            Have a Project in Mind?<br>
+                            <span class="gradient-text">Let's Build Something Great.</span>
+                        </h2>
+
+                        <p>
+                            WI'm always excited to learn, collaborate and build new things. Whether you have a project idea, an intership opportunity or just want to connect, feel free to reach out!
+                        </p>
+
+                        <a href="mailto:your.email@example.com"
+                           class="button button-primary email-button">
+                            Contact Me <span>↗</span>
+                        </a>
+
+                        <div class="contact-socials">
+                            <a href="https://github.com/anshuprogrammer12-design"
+                               target="_blank"
+                               rel="noopener noreferrer">GitHub ↗</a>
+
+                            <a href="https://www.linkedin.com/in/anshu-verma-581020428?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                               target="_blank"
+                               rel="noopener noreferrer">LinkedIn ↗</a>
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="form-heading">
+                            <span class="form-icon">✦</span>
+
+                            <div>
+                                <h3>Send a message</h3>
+                                <p>I'm open to Projects,intership and collaborations.</p>
+                            </div>
+                        </div>
+
+                        <label for="name">Your name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+
+                        <label for="email">Your Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="john@example.com"
+                            autocomplete="email"
+                            required>
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell me about your Project or opportunity..."
+                            required></textarea>
+
+                        <button type="submit"
+                                class="button button-primary submit-button">
+                            Send Message <span>↗</span>
+                        </button>
+
+                        <p class="form-status"
+                           id="form-status"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+       <!-- FEEDBACK SECTION -->
+<section id="feedback" class="feedback-section">
+
+    <div class="feedback-container">
+
+        <h2>Share Your Feedback</h2>
+
+        <p>Your feedback helps me improve my portfolio.</p>
+
+        <form id="feedbackForm">
+
+            <h3>Rate My Portfolio</h3>
+
+            <div class="feedback-stars">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+
+            <textarea
+                id="feedbackMessage"
+                placeholder="Write your feedback..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+            <p id="feedbackStatus"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                Anshu<span class="gradient-text">Verma</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <p>Designed with creativity & Built.</p>
+
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+            © <span id="year"></span> AnshuVerma All rights reserved.
+        </div>
+    </footer>
+
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
