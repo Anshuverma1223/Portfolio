@@ -647,3 +647,10 @@ if (feedbackForm) {
     });
 
 }
+
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-586GDVDM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
